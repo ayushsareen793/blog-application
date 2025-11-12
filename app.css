@@ -1,0 +1,123 @@
+/* General Page Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Main Container */
+.container {
+  width: 90%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  margin: 40px 0;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #2d3436;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #636e72;
+  font-size: 1rem;
+}
+
+/* Form Section */
+.new-post {
+  background: #f1f2f6;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.new-post:hover {
+  transform: translateY(-3px);
+}
+
+.new-post h2 {
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.new-post input,
+.new-post textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 14px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.new-post input:focus,
+.new-post textarea:focus {
+  border-color: #0984e3;
+  box-shadow: 0 0 5px rgba(9, 132, 227, 0.4);
+}
+
+button {
+  background: linear-gradient(135deg, #0984e3, #6c5ce7);
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.4);
+}
+
+/* Posts Section */
+.posts h2 {
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.post {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border-left: 5px solid #6c5ce7;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(108, 92, 231, 0.2);
+}
+
+.post h3 {
+  margin: 0 0 8px;
+  color: #2d3436;
+  font-size: 1.2rem;
+}
+
